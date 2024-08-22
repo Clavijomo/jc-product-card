@@ -38,7 +38,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "jc-product-card",
+  "name": "jc-product-card-react-ts",
   "author": "Clavijomo",
   "module": "dist/jc-product-card.esm.js",
   "size-limit": [
