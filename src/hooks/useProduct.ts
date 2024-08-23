@@ -8,7 +8,14 @@ interface useProductArgs {
     onChange?: (args: onChangeArgs) => void;
 }
 
-export const useProductHook = ({ onChange, product, value = 0, initialValues }: useProductArgs) => {
+export const useProductHook = (props: useProductArgs) => {
+    const {
+        value = 0,
+        product,
+        initialValues,
+        onChange
+    } = props;
+    
     const [counter, setCounter] = useState<number>(initialValues?.count || value);
 
     const isMounted = useRef<boolean>(false);

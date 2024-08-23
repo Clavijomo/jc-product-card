@@ -28,13 +28,12 @@ export const ProductCard = (props: Props) => {
         onChange,
     } = props;
 
-    const {
-        counter,
-        maxCount,
-        isMaxCountReached,
-        reset,
-        increaseBy
-    } = useProductHook({ onChange, product, value, initialValues });
+    const { counter, maxCount, isMaxCountReached, reset, increaseBy } = useProductHook({
+        onChange,
+        product,
+        value,
+        initialValues
+    });
 
     return (
         <Provider value={{ counter, product, maxCount, increaseBy }}>
